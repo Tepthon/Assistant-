@@ -1,13 +1,13 @@
-FROM telethonAr/telethonArab:alpine
+FROM telethonArab/telethonAr:alpine
 
-#clonning repo
-RUN git clone https://github.com/SAEED5OBR/hemaia1.git /root/iqqhtani
-#working directory
-WORKDIR /root/iqqhtani
+#clonning repo 
+RUN git clone https://github.com/Tepthon/Ar/master.git /root/iqthon
+#working directory 
+WORKDIR /root/iqthon
 
 # Install requirements
 RUN pip3 install -U -r requirements.txt
 
-ENV PATH="/home/iqqhtani/bin:$PATH"
+ENV PATH="/home/iqthon/bin:$PATH"
 
-CMD ["python3","-m","iqqhtani"]
+CMD ["python3","-m","iqthon"]
