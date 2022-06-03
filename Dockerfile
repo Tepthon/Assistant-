@@ -1,13 +1,13 @@
 FROM telethonAr/telethonArab:alpine
 
 #clonning repo
-RUN git clone https://github.com/Tepthon/Ar.git /root/iqqhtani
+RUN git clone https://github.com/Tepthon/At.git /root/Tepthon
 #working directory
-WORKDIR /root/iqqhtani
+WORKDIR /root/Tepthon
 
 # Install requirements
 RUN pip3 install -U -r requirements.txt
 
-ENV PATH="/home/iqqhtani/bin:$PATH"
+ENV PATH="/home/Tepthon/bin:$PATH"
 
-CMD ["python3","-m","iqqhtani"]
+CMD ["python3","-m","Tepthon"]
